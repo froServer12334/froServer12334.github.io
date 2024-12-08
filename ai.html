@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI</title>
+</head>
+<style>
+    body {
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h2,
+    h1 {
+        margin-top: 30px;
+    }
+
+    .spoiler {
+        background-color: gray;
+        color: transparent;
+        user-select: none;
+    }
+
+    .spoiler:hover {
+        background-color: inherit;
+        color: inherit;
+    }
+
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+    img {
+    width : 100%;
+    height: auto; 
+}
+
+</style>
+
+
+
+<body>
+    <div class="container">
+        <h1>AI</h1>
+        <p>You will see an image then a description then if you scroll you will questions and answers between me and the AI/p>
+        <p>Chart 1 and 2 use the data was averaged to the hour. The other charts have had no averages made</p>
+
+        <h2>Chart 1</h2>
+        <p>Chart 1 -> The data was resampled to hourly averages to reduce noise and better visualize long-term trends in core temperature. The plot below shows the temperature variations over time, which can help identify circadian rhythm patterns.</p>
+    </div>
+        <!-- <img src="images/chart1.png" alt="Error. Not loaded" /> -->
+        <!-- <img id="ResterauntImage"class="img-fluid" alt="Responsive image" src="http://www.gatesgardencentre.co.uk/wp-content/uploads/gn043-MED-WIDE.jpg" /> -->
+        <div class="center">
+            <img src="images/chart1.png" />
+          </div>
+
+        <div class="container">
+        <h2>Chart 2</h2>
+        <p>chart 2-> The reasoning here is to analyze the circadian rhythm by calculating the average core temperature for each hour of the day, which helps identify daily temperature patterns. The plot below visualizes this hourly trend.</p>
+    </div>
+        <div class="center">
+            <img src="images/chart2.png" />
+          </div>
+
+
+          <div class="container">
+            <h2>Chart 3</h2>
+            <p>Chart 3 uses all of the data available (ie no averages in preprocessing) to find the average temperature per hour in a day</p>
+        </div>
+        <div class="center">
+            <img src="images/chart3.png" />
+          </div>
+    
+
+
+          <div class="container">
+            <h2>Chart 4</h2>
+            <p>Chart 4 is the same as chart 3 however the AI has marked ideal sleep time
+            chart 4 was made using my data and the information gathered from the study (https://www.ncbi.nlm.nih.gov/books/NBK331/)
+            </p>
+        </div>
+        <div class="center">
+            <img src="images/chart4.png" />
+          </div>
+
+          <div class="container">
+            <h2>Chart 5</h2>
+            <p>Chart 5 is temperature over time but with no averaging done in preprocessing</p>
+        </div>
+        <div class="center">
+            <img src="images/chart5.png" />
+          </div>
+
+
+          <div class="container">
+            <h2>Chart 6</h2>
+            <p>Chart 6 shows the frequencies that my coldest point occurs at. I see a pattern but I'll admit, it a week one as their looks to be a lot of variation</p>
+            <p>If we walk back 2 to 4 hours then I think my sleep time should be 4 to 6 am</p>
+        </div>
+        <div class="center">
+            <img src="images/6.png" />
+          </div>
+
+
+          <div class="container">
+            <h1>The rest is questions and answers from me to the AI</h1>
+
+            <h2>What time should I sleep at?</h2>
+            <p>The temperature starts to drop significantly around 1 AM, suggesting that your ideal sleep time should begin earlier, likely around 10 PM to align with this natural cooling trend.</p>
+
+            <h2>Given an article [paper] on core temperature and sleep time</h2>
+            <p1>I fed it https://www.ncbi.nlm.nih.gov/books/NBK331/</p1>
+            <p>Response</p>
+            <p>"The coldest hour was identified as 8 AM, and based on the rule of sleeping 2-4 hours before the coldest point, the ideal sleep onset window is calculated to be between 4:00 AM and 6:00 AM.
+            </p>
+
+        <h2>With other article</h2>
+        <p>I gave it https://www.sleep.com/sleep-health/best-temperature-for-sleeping#:~:text=1.,hours%20before%20you%20wake%20up</p>
+        <p>Response</p>
+        <p>The lowest average core temperature occurs at 8 AM, so the suggested bedtime is approximately 6 AM, which is 1-2 hours before the nadir. This aligns with the circadian rhythm's natural dip in temperature.</p>
+
+        <h2>Does the pattern match non 24 sleep wake disorder?</h2>
+            <p>Progressive delay detected: False</p>
+<p>
+                The analysis shows that a progressive delay in nadir times is not consistently detected, meaning the pattern does not strongly match Non-24-Hour Sleep-Wake Disorder.</p>
+
+        <h2>Does the pattern match delayed sleep phase disorder?</h2>
+        <p>Consistent delay detected: False</p>
+        <p>The pattern does not consistently match DSPD, as the nadir does not reliably occur within the expected delayed time window.</p>
+
+        <h2>what do you think is going on then?</h2>
+        <p>
+            Based on the analysis, your circadian rhythm appears irregular, with nadir times fluctuating rather than following a consistent delay or progressive shift. This could indicate a disrupted sleep-wake cycle or irregular circadian rhythm,
+        </p>
+    </div>
+
+
+</body>
+
+</html>
